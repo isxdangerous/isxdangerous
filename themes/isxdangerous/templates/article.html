@@ -18,13 +18,13 @@
 
 {% block content %}
 <section id="content" class="body">
-  <header>
+  <div class="hero">
     <h1 class="entry-title">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
          title="Permalink to {{ article.metatitle|striptags }}">{{ article.metatitle }}</a></h2>
  {% import 'translations.html' as translations with context %}
  {{ translations.translations_for(article) }}
-  </header>
+  </div>
   <div class="post-info">
     <p>Danger information current as of:
    <time class="modified" datetime="{{ article.modified.isoformat() }}">

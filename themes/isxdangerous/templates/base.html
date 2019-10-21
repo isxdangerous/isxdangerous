@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
-<head>
-        {% block head %}
-        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-        <meta charset="utf-8" />
-        {% block metadata %}
-        {% endblock metadata %}
-        {% endblock head %}
-</head>
+  <head>
+    {% block head %}
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <meta charset="utf-8" />
+    {% block metadata %}
+    {% endblock metadata %}
+    {% endblock head %}
 
-<body>
-        <header class="body">
-          <h2><a href="{{ SITEURL }}/">Is <span class="rotate">X</span> Dangerous?</a></h2>
-          <p>{{ SITESUBTITLE }}</p>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        {% for cat, null in categories %}
-          <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-        {% endfor %}
-        </ul></nav><!-- /#menu -->
-        {% block content %}
-        {% endblock content %}
-        <footer>
-        </footer><!-- /#contentinfo -->
-</body>
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:600|Nunito+Sans&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="title-block">
+        <h2>{% include 'banana.html' %}<a href="{{ SITEURL }}/">IS <span class="rotate">X</span> DANGEROUS?</a></h2>
+        <p>{{ SITESUBTITLE }}</p>
+      </div>
+      <div class="nav-wrap">
+        <nav class="menu"><ul>
+            {% for cat, null in categories %}
+            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% endfor %}
+          </ul></nav>
+      </div><!-- /#menu -->
+    </header>
+    {% block content %}
+    {% endblock content %}
+    <footer>
+    </footer><!-- /#contentinfo -->
+  </body>
 </html>
