@@ -1,19 +1,9 @@
-{% extends "base.html" %}
-{% block content %}
-<section class="main">
-  {% block content_title %}
-  {% endblock %}
-
+<section class="related">
+  <h4>More Possible Dangers</h4>
   <div class="post-list">
-    {% for article in articles_page.object_list %}
-    <article class="post-card {% if article.featured is defined %}featured{% endif %}">
+    {% for article in articles[:2] %}
+    <article class="post-card">
       <div class="post-card-inner">
-        {% if article.featured is defined %}
-        <div class="featured-flag">
-          <h4>/ FEATURED DANGER /</h4>
-        </div>
-        {% endif %}
-
         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.metatitle|striptags }}" class="card-link">
           {% if article.image is defined %}
           <div class="post-image {% if article.featured is defined %}hidden{% endif %}">
@@ -36,19 +26,6 @@
           </a>
         </div>
       </div>
-      {% if article.featured is defined %}
-      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.metatitle|striptags }}">
-        <div class="featured-image">
-          <img src="{{ SITEURL }}/theme/images/{{ article.image }}">
-        </div>
-      </a>
-      {% endif %}
-
-    </article>
-    {% endfor %}
-  </div><!-- /#posts-list -->
-  {% if articles_page.has_other_pages() %}
-  {% include 'pagination.html' %}
-  {% endif %}
-</section><!-- /#content -->
-{% endblock content %}
+      </article>
+      {% endfor %}
+</section>

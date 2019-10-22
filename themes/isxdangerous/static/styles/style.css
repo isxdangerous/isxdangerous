@@ -81,7 +81,7 @@ a.logo-link:hover h2 {
  * nav
  */
 
-header .nav-wrap {
+.nav-wrap {
   width: 60%;
   display: inline-block;
   position: relative;
@@ -207,8 +207,19 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
   height: 150px;
   padding-top: 100px;
   background-color: #fff;
-  font-family: 'Cormorant', serif;
   box-shadow: 0 1px 3px 0 rgba(187,187,187,.5);
+}
+
+.post-content-unit {
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(187,187,187,.5);
+}
+
+.sidebar-unit {
+  width: 100%;
+  height: 200px;
 }
 
 /*
@@ -227,6 +238,8 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
   padding-bottom: 40px;
   position: relative;
 }
+
+
 
 .post-list {
   list-style: none;
@@ -363,12 +376,28 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
 .sidebar {
   display: inline-block;
   position: sticky;
-  top: 20px;
-  width: 29%;
+  top: 70px;
+  width: 25%;
+  float: right;
+  margin-left: 4%;
+}
+
+.sidebar-nav {
+  display: block;
+  border-bottom: 1px solid rgba(187,187,187,.5);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav h4 {
+  padding-top: 20px;
+  text-align: center;
 }
 
 .sidebar-nav ul, .sidebar-nav ul li {
   display: block;
+  margin-block-start: 0rem;
+  padding-inline-start: 0rem;
 }
 
 .sidebar-nav ul li {
@@ -400,6 +429,14 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
 .entry-content a {
   color: #4a4a4a;
   text-decoration: underline;
+  text-decoration-color: #6dc8e1;
+  text-decoration-style: double;
+  text-underline-position: under;
+}
+
+.entry-content a:hover {
+  color: #6dc8e1;
+  text-decoration-color: #6dc8e1;
 }
 
 .caption {
@@ -412,7 +449,7 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
   padding: 10px;
 }
 
-.danger-level h3, .caption {
+.danger-level h3, .caption, .sidebar-nav h4, .related h4 {
   font-family: 'Cormorant', serif;
   text-transform: uppercase;
   font-size: 18px;
@@ -425,6 +462,11 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
   font-family: 'Nunito Sans', sans-serif;
   color: #4a4a4a;
   margin-bottom: 20px;
+}
+
+.related h4 {
+  text-align: center;
+  margin-top: 20px;
 }
 
 
@@ -446,7 +488,82 @@ footer {
   margin-bottom: 20px;
   line-height: 30px;
   font-size: 14px;
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 1px solid rgba(187,187,187,.5);
 }
 
+.disclaimer h5 {
+  font-weight: 200;
+}
 
+/*
+ * responsive
+ */
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .hidden {
+    display: block;
+  }
+
+  .nav-wrap {
+    display: none;
+  }
+
+  .header-wrap {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .title-block {
+    width: 100%;
+  }
+
+  .featured-image {
+    display: none;
+  }
+
+  .featured .post-card-inner {
+    width: 100%;
+  }
+
+  .featured-flag {
+    margin: 15px auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .article, .related {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .article-image {
+    width: 80%;
+    margin: 10px 10%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .post-card {
+    flex-basis: 95%;
+  }
+
+  .disclaimer {
+    width: 80%;
+  }
+
+}

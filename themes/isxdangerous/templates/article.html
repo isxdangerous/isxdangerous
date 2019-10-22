@@ -44,7 +44,9 @@
     </div><!-- /.entry-content -->
     <div class="danger-level">
       <h3>Danger Level</h3>
+      <!-- TODO: color score on range from red to green -->
       <h4 class="score">{{ article.danger_level }}</h3>
+      <!-- TODO: factors as tags -->
       <h3>Factors</h3>
       <h4 class="factors">{{ article.factors }}</h4>
     </div>
@@ -59,15 +61,21 @@
   </div>
   <div class="sidebar">
     <div class="sidebar-nav">
+      <h4>/ Explore Dangers /</h4>
       <nav class="menu"><ul>
           {% for cat, null in categories %}
           <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
           {% endfor %}
         </ul></nav>
     </div>
-
-
+    <div class="sidebar-unit">
+    </div>
   </div>
 
 </section>
+
+<section class="post-content-unit">
+</section>
+
+{% include 'related.html' %}
 {% endblock %}
