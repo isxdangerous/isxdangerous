@@ -225,6 +225,7 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
   max-width: 1075px;
   margin: 0 auto;
   padding-bottom: 40px;
+  position: relative;
 }
 
 .post-list {
@@ -284,6 +285,7 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
 }
 
 .entry-title, .article-title a {
+  font-weight: 800;
   color: #3b3b3b;
   text-decoration: none;
 }
@@ -360,8 +362,19 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
 
 .sidebar {
   display: inline-block;
-  width: 229%;
+  position: sticky;
+  top: 20px;
+  width: 29%;
 }
+
+.sidebar-nav ul, .sidebar-nav ul li {
+  display: block;
+}
+
+.sidebar-nav ul li {
+  margin-bottom: 10px;
+}
+
 
 .article-image {
   display: block;
@@ -381,6 +394,12 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
 
 .entry-content p {
   margin-bottom: 32px;
+  font-weight: 200;
+}
+
+.entry-content a {
+  color: #4a4a4a;
+  text-decoration: underline;
 }
 
 .caption {

@@ -24,7 +24,7 @@
                                                   title="Permalink to {{ article.metatitle|striptags }}">{{ article.metatitle }}</a></h1>
 
       <div class="article-info">
-       <div class="category">
+        <div class="category">
           <p>Family // </p>
           <a href="{{ SITEURL }}/category/{{ article.category }}" class="{{ article.category }} category-label">
             {{ article.category }}
@@ -44,20 +44,29 @@
     </div><!-- /.entry-content -->
     <div class="danger-level">
       <h3>Danger Level</h3>
-        <h4 class="score">{{ article.danger_level }}</h3>
+      <h4 class="score">{{ article.danger_level }}</h3>
       <h3>Factors</h3>
       <h4 class="factors">{{ article.factors }}</h4>
     </div>
-        <div class="post-date">
-          <p>Danger information current as of:
-          <time class="modified" datetime="{{ article.modified.isoformat() }}">
-            {{ article.locale_modified }}
-          </time>
-          </p>
-        </div>
+    <div class="post-date">
+      <p>Danger information current as of:
+      <time class="modified" datetime="{{ article.modified.isoformat() }}">
+        {{ article.locale_modified }}
+      </time>
+      </p>
+    </div>
 
   </div>
   <div class="sidebar">
+    <div class="sidebar-nav">
+      <nav class="menu"><ul>
+          {% for cat, null in categories %}
+          <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+          {% endfor %}
+        </ul></nav>
+    </div>
+
+
   </div>
 
 </section>
