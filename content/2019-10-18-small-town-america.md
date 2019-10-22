@@ -9,6 +9,7 @@ category: places
 summary: Is small-town America dangerous? If you're not sure, you'd better read this. 
 danger_level: 3.1
 factors: Hard to leave, Occasional racist violence, Boring, Not a big deal
+image: small-town-america.jpg
 ---
 
 **Small-town America** is a place where not a lot of people live, even though it feels like it is most of America. In fact, most of America is a highway, a tree, or a grass. Most people live in cities. About 80% of Americans live in non-rural areas, even though cities only cover about 4% of land in America.

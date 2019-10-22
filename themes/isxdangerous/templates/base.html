@@ -8,28 +8,55 @@
     {% endblock metadata %}
     {% endblock head %}
 
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}{% if category %}/..{% endif %}/theme/styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant:600|Nunito+Sans&display=swap" rel="stylesheet">
+    <script data-ad-client="ca-pub-4219202706236011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150547292-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150547292-1');
+    </script>
 
   </head>
 
   <body>
     <header>
-      <div class="title-block">
-        <h2>{% include 'banana.html' %}<a href="{{ SITEURL }}/">IS <span class="rotate">X</span> DANGEROUS?</a></h2>
-        <p>{{ SITESUBTITLE }}</p>
+      <div class="header-wrap">
+        <a class="logo-link" href="{{ SITEURL }}/">
+          <div class="title-block">
+            <img class="logo" src="{{ SITEURL }}/theme/images/banana.svg">
+            <div class="site-title">
+              <h2>IS <span class="rotate">X</span> DANGEROUS?</h2>
+              <p>{{ SITESUBTITLE }}</p>
+            </div>
+          </div>
+        </a>
+        <div class="nav-wrap">
+          <nav class="menu"><ul>
+              {% for cat, null in categories %}
+              <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+              {% endfor %}
+            </ul></nav>
+        </div><!-- /#menu -->
       </div>
-      <div class="nav-wrap">
-        <nav class="menu"><ul>
-            {% for cat, null in categories %}
-            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-            {% endfor %}
-          </ul></nav>
-      </div><!-- /#menu -->
     </header>
+    {% block banner_unit %}
+    <div class="banner-unit">
+    </div>
+    {% endblock %}
+    <div class="page-wrap">
     {% block content %}
     {% endblock content %}
+    </div>
     <footer>
+      {% include 'disclaimer.html' %}
+      <p>&copy; 2019 Is X Dangerous</p>
     </footer><!-- /#contentinfo -->
   </body>
 </html>
+

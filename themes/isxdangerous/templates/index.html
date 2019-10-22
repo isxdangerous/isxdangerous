@@ -1,22 +1,55 @@
 {% extends "base.html" %}
 {% block content %}
 <section class="main">
-{% block content_title %}
-{% endblock %}
+  {% block content_title %}
+  {% endblock %}
 
-<ol id="post-list">
-{% for article in articles_page.object_list %}
-        <li><article class="post_card">
-                <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-                <div class="post-info">
-                    <time datetime="{{ article.date.isoformat() }}">Danger information current as of {{ article.locale_date }} </time>
-                </div><!-- /.post-info -->
-                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
-        </article></li>
-{% endfor %}
-</ol><!-- /#posts-list -->
-{% if articles_page.has_other_pages() %}
-    {% include 'pagination.html' %}
-{% endif %}
+  <div class="post-list">
+    {% for article in articles_page.object_list %}
+    <article class="post-card {% if article.featured is defined %}featured{% endif %}">
+      <div class="post-card-inner">
+        {% if article.featured is defined %}
+        <div class="featured-flag">
+          <h4>/ FEATURED DANGER /</h4>
+        </div>
+        {% endif %}
+
+        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}" class="card-link">
+          {% if article.featured is defined %}
+          {% elif article.image is defined %}
+          <div class="post-image">
+            <img src="{{ SITEURL }}/theme/images/{{ article.image }}">
+          </div>
+          {% endif %}
+          <div class="post-card-info">
+            <h2 class="entry-title">{{ article.title }}</h2>
+            </p>
+            <div class="post-date">
+              <p>Danger information current as of <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></p>
+            </div><!-- /.post-info -->
+            <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+          </div>
+        </a>
+        <div class="category">
+          <p>Family // </p>
+          <a href="{{ SITEURL }}/category/{{ article.category }}" class="{{ article.category }} category-label">
+            {{ article.category }}
+          </a>
+        </div>
+      </div>
+      {% if article.featured is defined %}
+      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+        <div class="featured-image">
+          <img src="{{ SITEURL }}/theme/images/{{ article.image }}">
+        </div>
+      </a>
+      {% endif %}
+
+    </article>
+    {% endfor %}
+  </div><!-- /#posts-list -->
+  {% if articles_page.has_other_pages() %}
+  {% include 'pagination.html' %}
+  {% endif %}
 </section><!-- /#content -->
 {% endblock content %}
