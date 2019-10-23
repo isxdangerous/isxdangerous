@@ -1,7 +1,46 @@
 {% extends "base.html" %}
 {% block html_lang %}{{ article.lang }}{% endblock %}
 
-{% block title %}{{ article.title }}: dangerous or not? | Is X Dangerous{% endblock %}
+{% block title %}{{ article.metatitle }} | Is X Dangerous{% endblock %}
+
+{% block metadata %}
+
+    <link rel="canonical" href="{{ SITEURL }}/{{ article.category }}/{{ article.slug }}">
+    <meta name="title" content="{{ article.metatitle }} | Is X Dangerous">
+    <meta name="description" content="{{ article.summary|striptags }}">
+    <meta name="keywords" content="{{ article.metatitle }}, should i be afraid of {{ article.title }}, {{ article.title }} dangerous or not, {{ article.title }} danger factors, {{ article.title }} danger level">
+
+    <script type="application/ld+json">
+      {
+        "context": "http://schema.org",
+        "@type": "WebPage",
+        "name": "{{ article.metatitle }}",
+        "keywords": "{{ article.metatitle }}, should i be afraid of {{ article.title }}, {{ article.title }} dangerous or not, {{ article.title }} danger factors, {{ article.title }} danger level",
+        "description": "{{ article.summary|striptags }}",
+        "url": "{{ SITEURL }}/{{ article.category }}/{{ article.slug }}",
+        "about": "{{ article.title }}",
+        "image": "{{ SITEURL }}/theme/images/{{ article.image }}",
+        "creator": {
+          "@type": "Organization",
+          "name": "Is X Dangerous",
+          "logo": "{{ SITEURL }}/theme/images/isdangerous-logo.png"
+          }
+        }
+    </script>
+
+    <meta name="og:title" content="{{ article.metatitle }} | Is X Dangerous">
+    <meta name="og:description" content="{{ article.summary|striptags }}">
+    <meta name="og:url" content="https://isxdangerous.com">
+    <meta name="og:image" content="{{ SITEURL }}/theme/images/{{ article.image }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ article.metatitle }} | Is X Dangerous">
+    <meta name="twitter:description" content="{{ article.summary|striptags }}">
+    <meta name="twitter:site" content="@isxdangerous">
+    <meta name="twitter:creator" content="@isxdangerous">
+    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/{{ article.image }}">
+
+{% endblock %}
 {% block head %}
 {{ super() }}
 

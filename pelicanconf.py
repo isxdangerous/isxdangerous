@@ -15,6 +15,8 @@ SITEMAP = { 'format': 'xml', 'exclude': ['tag/', 'tags', 'archive'] }
 ARTICLE_URL = '{category}/{slug}/'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
 
+STATIC_PATHS = ['./themes/isxdangerous/root-files']
+
 TIMEZONE = 'EST'
 DATE_FORMATS = {
         'en': '%A, %B %d, %Y'
@@ -31,7 +33,7 @@ AUTHOR_FEED_RSS = None
 
 SUMMARY_MAX_LENGTH = 40
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 6
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
