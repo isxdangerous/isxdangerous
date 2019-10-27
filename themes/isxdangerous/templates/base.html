@@ -81,59 +81,59 @@
     <script type="text/javascript" src="{{ SITEURL }}/theme/javascripts/nav.js">
     </script>
 
-      {% endblock head %}
+    {% endblock head %}
 
-        </head>
+  </head>
 
-        <body>
-        <header>
-        <div class="header-wrap">
+  <body>
+    <header>
+      <div class="header-wrap">
         <a class="logo-link" href="{{ SITEURL }}/">
-        <div class="title-block">
-        <img class="logo" src="{{ SITEURL }}/theme/images/banana.svg">
-        <div class="site-title">
-        <h2>IS <span class="rotate">X</span> DANGEROUS?</h2>
-        <p>{{ SITESUBTITLE }}</p>
-        </div>
-        </div>
+          <div class="title-block">
+            <img class="logo" src="{{ SITEURL }}/theme/images/banana.svg">
+            <div class="site-title">
+              <h2>IS <span class="rotate">X</span> DANGEROUS?</h2>
+              <p>{{ SITESUBTITLE }}</p>
+            </div>
+          </div>
         </a>
         <div class="nav-wrap">
-        <nav class="menu"><ul>
-        {% for cat, null in categories %}
-        <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-        {% endfor %}
-        </ul></nav>
+          <nav class="menu"><ul>
+              {% for cat, null in categories %}
+              <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+              {% endfor %}
+            </ul></nav>
         </div><!-- /#menu -->
-        </div>
-        </header>
-        {% block banner_unit %}
-        <!--    <div class="banner-unit">
-        </div> -->
-        {% endblock %}
-        <div class="page-wrap">
+      </div>
+    </header>
+    {% block banner_unit %}
+    <!--    <div class="banner-unit">
+      </div> -->
+      {% endblock %}
+      <div class="page-wrap">
         {% block content %}
-      {% endblock content %}
-        </div>
-        <div class="mobile-nav-bg hidden" id="mobile-nav-bg">
-        </div>
-        <div class="mobile-nav-wrap hidden" id="mobile-nav-wrap">
+        {% endblock content %}
+      </div>
+      <div class="mobile-nav-bg hidden" id="mobile-nav-bg">
+      </div>
+      <div class="mobile-nav-wrap hidden" id="mobile-nav-wrap">
         <h4>/ EXPLORE DANGERS /</h4>
         <nav class="menu"><ul>
-        {% for cat, null in categories %}
-        <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-        {% endfor %}
-        </ul></nav>
-        </div><!-- /#menu -->
-        <div class="mobile-nav-button" id="mobile-nav-button">
+            {% for cat, null in categories %}
+            <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% endfor %}
+          </ul></nav>
+      </div><!-- /#menu -->
+      <div class="mobile-nav-button" id="mobile-nav-button">
         <img id="ham-icon" src="{{ SITEURL }}/theme/images/hamburger.svg">
-<img id="x-icon" class="hidden" src="{{ SITEURL }}/theme/images/x.svg">
-        </div>
+        <img id="x-icon" class="hidden" src="{{ SITEURL }}/theme/images/x.svg">
+      </div>
 
 
-        <footer>
+      <footer>
         {% include 'disclaimer.html' %}
-        <p>&copy; 2019 Is X Dangerous</p>
-        </footer><!-- /#contentinfo -->
-        </body>
-        </html>
+        <p>&copy; 2019 Is X Dangerous // <a href="{{ SITEURL }}/wtf">WTF?</a></p>
+      </footer><!-- /#contentinfo -->
+  </body>
+</html>
 

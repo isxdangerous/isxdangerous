@@ -81,7 +81,7 @@ a.logo-link:hover h2 {
  * nav
  */
 
-.mobile-nav-wrap {
+.mobile-nav-wrap, .mobile-nav-button {
   display: none;
 }
 
@@ -239,11 +239,10 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
   width: 85%;
   max-width: 1075px;
   margin: 0 auto;
+  padding-top: 100px;
   padding-bottom: 40px;
   position: relative;
 }
-
-
 
 .post-list {
   list-style: none;
@@ -522,12 +521,12 @@ footer {
   }
 
   .mobile-nav-button {
-    width: 85px;
-    height: 85px;
+    width: 65px;
+    height: 65px;
     border-radius: 100%;
     z-index: 6;
     position: fixed;
-    bottom: 40px;
+    bottom: 60px;
     right: 20px;
     background-color: #fff;
   }
@@ -617,6 +616,7 @@ footer {
 
   .main {
     width: 100%;
+
   }
 
   .post-card {

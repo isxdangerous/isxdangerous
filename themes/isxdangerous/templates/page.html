@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}{{ page.metatitle }} | Is X Dangerous{% endblock %}
+
+{% block metadata %}
+
+    <link rel="canonical" href="{{ SITEURL }}/{{ page.slug }}">
+    <meta name="title" content="{{ page.metatitle }} | Is X Dangerous">
+    <meta name="description" content="{{ page.summary|striptags }}">
+    <meta name="keywords" content="{{ page.metatitle }}, should i be afraid of {{ page.title }}, {{ page.title }} dangerous or not, {{ page.title }} danger factors, {{ page.title }} danger level">
+
+    <script type="application/ld+json">
+      {
+        "context": "http://schema.org",
+        "@type": "WebPage",
+        "name": "{{ page.metatitle }}",
+        "keywords": "{{ page.metatitle }}, should i be afraid of {{ page.title }}, {{ page.title }} dangerous or not, {{ page.title }} danger factors, {{ page.title }} danger level",
+        "description": "{{ page.summary|striptags }}",
+        "url": "{{ SITEURL }}/{{ page.category }}/{{ page.slug }}",
+        "about": "{{ page.title }}",
+        "image": "{{ SITEURL }}/theme/images/{{ page.image }}",
+        "creator": {
+          "@type": "Organization",
+          "name": "Is X Dangerous",
+          "logo": "{{ SITEURL }}/theme/images/isdangerous-logo.png"
+          }
+        }
+    </script>
+
+    <meta name="og:title" content="{{ page.metatitle }} | Is X Dangerous">
+    <meta name="og:description" content="{{ page.summary|striptags }}">
+    <meta name="og:url" content="https://isxdangerous.com">
+    <meta name="og:image" content="{{ SITEURL }}/theme/images/{{ page.image }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.metatitle }} | Is X Dangerous">
+    <meta name="twitter:description" content="{{ page.summary|striptags }}">
+    <meta name="twitter:site" content="@isxdangerous">
+    <meta name="twitter:creator" content="@isxdangerous">
+    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/{{ page.image }}">
+
+{% endblock %}
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+{% block content %}
+<section class="main">
+  <div class="article">
+    <div class="hero">
+      <h1 class="article-title">
+        <a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark"
+                                                  title="Permalink to {{ page.metatitle|striptags }}">{{ page.metatitle }}</a></h1>
+
+      <div class="article-info">
+        <div class="category">
+          <p>Family // </p>
+          <a href="{{ SITEURL }}/wtf" class="ideas category-label">
+            WTF
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="entry-content">
+      {{ page.content }}
+    </div><!-- /.entry-content -->
+    <div class="danger-level">
+      <h3>Danger Level</h3>
+      <!-- TODO: color score on range from red to green -->
+      <h4 class="score">{{ page.danger_level }}</h3>
+      <!-- TODO: factors as tags -->
+      <h3>Factors</h3>
+      <h4 class="factors">{{ page.factors }}</h4>
+    </div>
+
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-nav">
+      <h4>/ Explore Dangers /</h4>
+      <nav class="menu"><ul>
+          {% for cat, null in categories %}
+          <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+          {% endfor %}
+        </ul></nav>
+    </div>
+    <div class="sidebar-unit">
+    </div>
+  </div>
+
+</section>
+
+<!--<section class="post-content-unit">
+</section> -->
+
+{% endblock %}
