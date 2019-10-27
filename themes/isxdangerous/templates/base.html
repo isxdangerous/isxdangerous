@@ -42,7 +42,6 @@
     <meta name="twitter:image" content="{{ SITEURL }}/theme/images/isxdangerous-card.png">
 
     {% endblock metadata %}
-    {% endblock head %}
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -79,41 +78,62 @@
       gtag('config', 'UA-150547292-1');
     </script>
 
-  </head>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/javascripts/nav.js">
+    </script>
 
-  <body>
-    <header>
-      <div class="header-wrap">
+      {% endblock head %}
+
+        </head>
+
+        <body>
+        <header>
+        <div class="header-wrap">
         <a class="logo-link" href="{{ SITEURL }}/">
-          <div class="title-block">
-            <img class="logo" src="{{ SITEURL }}/theme/images/banana.svg">
-            <div class="site-title">
-              <h2>IS <span class="rotate">X</span> DANGEROUS?</h2>
-              <p>{{ SITESUBTITLE }}</p>
-            </div>
-          </div>
+        <div class="title-block">
+        <img class="logo" src="{{ SITEURL }}/theme/images/banana.svg">
+        <div class="site-title">
+        <h2>IS <span class="rotate">X</span> DANGEROUS?</h2>
+        <p>{{ SITESUBTITLE }}</p>
+        </div>
+        </div>
         </a>
         <div class="nav-wrap">
-          <nav class="menu"><ul>
-              {% for cat, null in categories %}
-              <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-              {% endfor %}
-            </ul></nav>
+        <nav class="menu"><ul>
+        {% for cat, null in categories %}
+        <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+        {% endfor %}
+        </ul></nav>
         </div><!-- /#menu -->
-      </div>
-    </header>
-    {% block banner_unit %}
-    <div class="banner-unit">
-    </div>
-    {% endblock %}
-    <div class="page-wrap">
-    {% block content %}
-    {% endblock content %}
-    </div>
-    <footer>
-      {% include 'disclaimer.html' %}
-      <p>&copy; 2019 Is X Dangerous</p>
-    </footer><!-- /#contentinfo -->
-  </body>
-</html>
+        </div>
+        </header>
+        {% block banner_unit %}
+        <!--    <div class="banner-unit">
+        </div> -->
+        {% endblock %}
+        <div class="page-wrap">
+        {% block content %}
+      {% endblock content %}
+        </div>
+        <div class="mobile-nav-bg hidden" id="mobile-nav-bg">
+        </div>
+        <div class="mobile-nav-wrap hidden" id="mobile-nav-wrap">
+        <h4>/ EXPLORE DANGERS /</h4>
+        <nav class="menu"><ul>
+        {% for cat, null in categories %}
+        <li class="{{ cat }} {% if cat == category %}active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+        {% endfor %}
+        </ul></nav>
+        </div><!-- /#menu -->
+        <div class="mobile-nav-button" id="mobile-nav-button">
+        <img id="ham-icon" src="{{ SITEURL }}/theme/images/hamburger.svg">
+<img id="x-icon" class="hidden" src="{{ SITEURL }}/theme/images/x.svg">
+        </div>
+
+
+        <footer>
+        {% include 'disclaimer.html' %}
+        <p>&copy; 2019 Is X Dangerous</p>
+        </footer><!-- /#contentinfo -->
+        </body>
+        </html>
 

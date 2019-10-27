@@ -33,7 +33,7 @@ header {
   background-color: #fff;
   font-family: 'Cormorant', serif;
   box-shadow: 0 1px 3px 0 rgba(187,187,187,.5);
-  z-index: 20;
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -80,6 +80,10 @@ a.logo-link:hover h2 {
 /*
  * nav
  */
+
+.mobile-nav-wrap {
+  display: none;
+}
 
 .nav-wrap {
   width: 60%;
@@ -389,7 +393,7 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
   margin-bottom: 20px;
 }
 
-.sidebar-nav h4 {
+.sidebar-nav h4, .mobile-nav-wrap h4 {
   padding-top: 20px;
   text-align: center;
 }
@@ -449,7 +453,7 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
   padding: 10px;
 }
 
-.danger-level h3, .caption, .sidebar-nav h4, .related h4 {
+.danger-level h3, .caption, .sidebar-nav h4, .related h4, .mobile-nav-wrap h4 {
   font-family: 'Cormorant', serif;
   text-transform: uppercase;
   font-size: 18px;
@@ -509,8 +513,65 @@ footer {
     display: block;
   }
 
+  .mobile-nav-bg.hidden, .mobile-nav-wrap.hidden, img.hidden {
+    display: none;
+  }
+
   .nav-wrap {
     display: none;
+  }
+
+  .mobile-nav-button {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    z-index: 6;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #fff;
+  }
+
+  .mobile-nav-button img {
+    width: 85%;
+    height: 85%;
+    margin: 7.5%;
+  }
+
+  .mobile-nav-bg {
+    background-color: rgba(166,166,166,0.5);
+    z-index: 4;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-nav-wrap {
+    display: block;
+    width: 100%;
+    height: 60%;
+    position: fixed;
+    top: 20%;
+    background-color: #fff;
+    z-index: 5;
+  }
+
+  .mobile-nav-wrap ul {
+    display: block;
+    margin-block-start: 10px;
+    padding-inline-start: 10px;
+  }
+
+  .mobile-nav-wrap li {
+    font-size: 24px;
+    line-height: 36px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .mobile-nav-wrap li:active; .mobile-nav-wrap li:hover {
+    .border-width: 0 0 0 2px;
   }
 
   .header-wrap {
