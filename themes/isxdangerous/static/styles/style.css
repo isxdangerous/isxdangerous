@@ -452,7 +452,7 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
   padding: 10px;
 }
 
-.danger-level h3, .caption, .sidebar-nav h4, .related h4, .mobile-nav-wrap h4 {
+.danger-level h3, .caption, .sidebar-nav h4, .related h4, .mobile-nav-wrap h4, .paginator h4 {
   font-family: 'Cormorant', serif;
   text-transform: uppercase;
   font-size: 18px;
@@ -474,8 +474,27 @@ nav ul li.places:hover a, nav ul li.places.active a, .places-title, a.places, a.
 
 
 /*
- * footer & disclaimer
+ * paginator, footer & disclaimer
  */
+
+.paginator {
+  display: flex;
+  width: 100%;
+}
+
+.paginator a {
+  text-decoration: none;
+}
+
+.paginator .newer, .paginator .older {
+  display: inline-block;
+  flex-basis: 50%;
+}
+
+.paginator .older {
+  text-align: right;
+}
+
 
 footer {
   width: 100%;

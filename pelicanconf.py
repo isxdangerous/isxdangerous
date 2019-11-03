@@ -14,8 +14,15 @@ PLUGINS = ['sitemap']
 SITEMAP = { 'format': 'xml', 'exclude': ['tag/', 'tags', 'archive'] }
 ARTICLE_URL = '{category}/{slug}/'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
+CATEGORY_URL = '{slug}/'
+CATEGORY_SAVE_AS = '{slug}.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}.html'
 
-STATIC_PATHS = ['./themes/isxdangerous/root-files']
+STATIC_PATHS = ['root-files']
+EXTRA_PATH_METADATA = {
+        'root-files/favicon.ico': {'path': 'favicon.ico' }
+        }
 
 TIMEZONE = 'EST'
 DATE_FORMATS = {
@@ -36,4 +43,4 @@ SUMMARY_MAX_LENGTH = 40
 DEFAULT_PAGINATION = 6
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+# RELATIVE_URLS = True
