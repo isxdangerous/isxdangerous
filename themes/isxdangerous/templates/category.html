@@ -1,4 +1,42 @@
 {% extends "index.html" %}
+{% block metadata %}
+
+    <link rel="canonical" href="{{ SITEURL }}/{{ category }}">
+    <meta name="title" content="{{ category }} | Is X Dangerous">
+    <meta name="description" content="Are any {{ category }} dangerous?">
+    <meta name="keywords" content="are {{ category }} dangerous, should i be afraid of {{ category }}, {{ category }} dangerous or not, {{ category }} danger factors, {{ category }} danger level">
+
+    <script type="application/ld+json">
+      {
+        "context": "http://schema.org",
+        "@type": "WebPage",
+        "name": "{{ category }}",
+        "keywords": "are {{ category }} dangerous, should i be afraid of {{ category }}, {{ category }} dangerous or not, {{ category }} danger factors, {{ category }} danger level",
+        "description": "Are any {{ category }} dangerous?",
+        "url": "{{ SITEURL }}/{{ category }}",
+        "about": "{{ category }}",
+        "image": "{{ SITEURL }}/theme/images/isxdangerous-card.png",
+        "creator": {
+          "@type": "Organization",
+          "name": "Is X Dangerous",
+          "logo": "{{ SITEURL }}/theme/images/isxdangerous-logo.png"
+          }
+        }
+    </script>
+
+    <meta name="og:title" content="{{ category }} | Is X Dangerous">
+    <meta name="og:description" content="Are any {{ category }} dangerous?">
+    <meta name="og:url" content="{{ SITEURL }}/{{ category }}">
+    <meta name="og:image" content="{{ SITEURL }}/theme/images/isxdangerous-card.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ category }} | Is X Dangerous">
+    <meta name="twitter:description" content="Are any {{ category }} dangerous?">
+    <meta name="twitter:site" content="@isxdangerous">
+    <meta name="twitter:creator" content="@isxdangerous">
+    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/isxdangerous-card.png">
+
+{% endblock %}
 
 {% block title %}{{ SITENAME }} - {{ category }} category{% endblock %}
 

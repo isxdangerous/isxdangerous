@@ -5,370 +5,370 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2019-11-03T16:29:22-00:00</lastmod>
+<lastmod>2019-11-03T16:46:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2019-11-03T16:29:22-00:00</lastmod>
+<lastmod>2019-11-03T16:46:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/wtf/</loc>
-<lastmod>2019-11-03T16:29:22-00:00</lastmod>
+<lastmod>2019-11-03T16:46:01-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/books/</loc>
+<loc>/ideas/books</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/activities/cancer/</loc>
+<loc>/activities/cancer</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/capitalism/</loc>
+<loc>/ideas/capitalism</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/discourse/</loc>
+<loc>/ideas/discourse</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/activities/eating/</loc>
+<loc>/activities/eating</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/facebook/</loc>
+<loc>/ideas/facebook</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/places/houses/</loc>
+<loc>/places/houses</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/websites/</loc>
+<loc>/ideas/websites</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/places/america/</loc>
+<loc>/places/america</loc>
 <lastmod>2019-11-01T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/google/</loc>
+<loc>/ideas/google</loc>
 <lastmod>2019-10-30T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/the-internet/</loc>
+<loc>/ideas/the-internet</loc>
 <lastmod>2019-10-30T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/activities/advertising/</loc>
+<loc>/activities/advertising</loc>
 <lastmod>2019-10-29T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/places/cities/</loc>
+<loc>/places/cities</loc>
 <lastmod>2019-10-29T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/activities/global-warming/</loc>
+<loc>/activities/global-warming</loc>
 <lastmod>2019-10-29T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/activities/heroin/</loc>
+<loc>/activities/heroin</loc>
 <lastmod>2019-10-29T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/money/</loc>
+<loc>/ideas/money</loc>
 <lastmod>2019-10-29T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/activities/sex/</loc>
+<loc>/activities/sex</loc>
 <lastmod>2019-10-29T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/tablets/</loc>
+<loc>/minerals/tablets</loc>
 <lastmod>2019-10-29T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/activities/violence/</loc>
+<loc>/activities/violence</loc>
 <lastmod>2019-10-29T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/big-cats/</loc>
+<loc>/animals/big-cats</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/cars/</loc>
+<loc>/minerals/cars</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/computers/</loc>
+<loc>/minerals/computers</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/guns/</loc>
+<loc>/minerals/guns</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/highways/</loc>
+<loc>/minerals/highways</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/millennials/</loc>
+<loc>/animals/millennials</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/phones/</loc>
+<loc>/minerals/phones</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/potassium/</loc>
+<loc>/minerals/potassium</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/steve-jobs/</loc>
+<loc>/animals/steve-jobs</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/wild-animals/</loc>
+<loc>/animals/wild-animals</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/astrology/</loc>
+<loc>/ideas/astrology</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/cats/</loc>
+<loc>/animals/cats</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/dogs/</loc>
+<loc>/animals/dogs</loc>
 <lastmod>2019-10-18T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/plants/grass/</loc>
+<loc>/plants/grass</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/kittens/</loc>
+<loc>/animals/kittens</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/parents/</loc>
+<loc>/animals/parents</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/people/</loc>
+<loc>/animals/people</loc>
 <lastmod>2019-10-18T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/rocks/</loc>
+<loc>/minerals/rocks</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/plants/trees/</loc>
+<loc>/plants/trees</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/plants/bananas/</loc>
+<loc>/plants/bananas</loc>
 <lastmod>2019-10-18T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/novels/</loc>
+<loc>/ideas/novels</loc>
 <lastmod>2019-10-18T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/puppies/</loc>
+<loc>/animals/puppies</loc>
 <lastmod>2019-10-18T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/activities/seo/</loc>
+<loc>/activities/seo</loc>
 <lastmod>2019-10-18T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/places/small-town-america/</loc>
+<loc>/places/small-town-america</loc>
 <lastmod>2019-10-18T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/the-moon/</loc>
+<loc>/minerals/the-moon</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/activities/</loc>
+<loc>/activities</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/animals/</loc>
+<loc>/animals</loc>
 <lastmod>2019-10-28T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ideas/</loc>
+<loc>/ideas</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/minerals/</loc>
+<loc>/minerals</loc>
 <lastmod>2019-10-29T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/places/</loc>
+<loc>/places</loc>
 <lastmod>2019-11-03T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/plants/</loc>
+<loc>/plants</loc>
 <lastmod>2019-10-27T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
