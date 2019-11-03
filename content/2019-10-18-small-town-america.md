@@ -14,7 +14,7 @@ image: small-town-america.jpg
 
 **Small-town America** is a place where not a lot of [people](/animals/people) live, even though it feels like it is most of [America](/places/america). In fact, most of America is a [highway](/minerals/highways), a [tree](/plants/trees), or a [grass](/plants/grass). Most people live in [cities](/places/cities). About 80% of Americans live in non-rural areas, even though cities only cover about 4% of land in America.
 
-Rural America is known (especially internationally) for its interest in [guns](/minerals/guns) and [religion](/ideas/religion), but only the latter is commonly in use. While guns are ever-present, they are largely being used to project [masculinity](/ideas/masculinity) and, in some cases, to do violence because of [racism](/ideas/racism). 
+Rural America is known (especially internationally) for its interest in [guns](/minerals/guns) and religion, but only the latter is commonly in use. While guns are ever-present, they are largely being used to project masculinity and, in some cases, to do violence because of racism. 
 
 In fact, the most dangerous part of small-town America is the fact that people who are born there enjoy or envision few opportunities to leave and do something aside from what their parents do (or heroin).
 
