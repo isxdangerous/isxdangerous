@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Is X Dangerous Editorial Board'
 SITENAME = u'Is X Dangerous?'
 SITESUBTITLE = 'Cataloging the world’s Dangers'
-SITEURL = ''
+SITEURL = 'https://isxdangerous.com'
 PATH = 'content'
 THEME = './themes/isxdangerous'
 OUTPUT_PATH = 'docs/' # for github pages hosting
