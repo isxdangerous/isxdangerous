@@ -4,7 +4,7 @@ slug: millennials
 title: Millennials
 metatitle: Are Millennials Dangerous?
 date_published: 2019-10-28
-modified: 2019-12-17
+modified: 2020-02-27
 category: animals
 summary: Are millennials dangerous? As with so many other animals, it depends.
 danger_level: 5.2
@@ -16,7 +16,7 @@ image: millennials.jpg
 
 Most millennials' [parents](/animals/parents) are [boomers](/animals/boomers).
 
-Some of the things millennials are actually responsible for are [Facebook](/ideas/facebook), a mainstream culture that approves of video games, a resurgence of [American](/places/america) interest in democratic socialism, and declining sales for some valueless status symbols. Some things millennials are not responsible for are [Google](/ideas/google), [smartphones](/minerals/phones), the [internet](/ideas/the-internet), and religion.
+Some of the things millennials are actually responsible for are [Facebook](/ideas/facebook), a mainstream culture that approves of video games, a resurgence of [American](/places/america) interest in [democratic socialism](/ideas/socialism), and declining sales for some valueless status symbols. Some things millennials are not responsible for are [Google](/ideas/google), [smartphones](/minerals/phones), the [internet](/ideas/the-internet), and religion.
 
 Look: it's mostly a matter of perspective. Like any group of people, millennials have done all sorts of things—good and bad, dangerous and safe. We mostly feel that millennials as a group are only dangerous to established social and economic patterns that aren't compatible with the lives of disappointed but interconnected young adults living in a globalized [capitalist](/ideas/capitalism) economy helmed by people who see no reason to adjust their operating principles despite the looming threats of [global warming](/activities/global-warming) and international social unrest.
 
