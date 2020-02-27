@@ -5,21 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://isxdangerous.com/</loc>
-<lastmod>2019-12-17T21:48:30-00:00</lastmod>
+<lastmod>2020-02-27T17:32:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://isxdangerous.com/categories.html</loc>
-<lastmod>2019-12-17T21:48:30-00:00</lastmod>
+<lastmod>2020-02-27T17:32:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://isxdangerous.com/wtf/</loc>
-<lastmod>2019-12-17T21:48:30-00:00</lastmod>
+<lastmod>2020-02-27T17:32:33-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://isxdangerous.com/ideas/socialism</loc>
+<lastmod>2020-02-27T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -355,7 +362,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://isxdangerous.com/ideas</loc>
-<lastmod>2019-11-03T00:00:00-05:00</lastmod>
+<lastmod>2020-02-27T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -383,7 +390,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://isxdangerous.com/author/is-x-dangerous-editorial-board.html</loc>
-<lastmod>2019-12-17T00:00:00-05:00</lastmod>
+<lastmod>2020-02-27T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
